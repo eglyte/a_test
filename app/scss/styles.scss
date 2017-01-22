@@ -1,0 +1,239 @@
+@import 'bootstrap-custom';
+
+body {
+	font-family: 'Avenir','Muli', sans-serif;
+}
+.nav-social-media {
+	position: relative;
+	z-index: 10;
+
+	ul {
+		background-color: transparent;
+		margin: 2.5rem 1rem;
+
+		li {
+
+			a {
+				color: #ffffff;
+
+				i {
+					background: #808080;
+				    width: 40px;
+				    height: 40px;
+				    font-size: 1.286em;
+				    line-height: 2.25;
+				    border-radius: 100%;
+    				text-align: center;
+				    transition: all 0.2s ease-in-out;
+
+				    &.fa-facebook {
+					    background:#3b5998;
+					} 
+					&.fa-twitter {
+					    background:#00aced;
+					}
+					&.fa-instagram {
+					    background: #E12F67;
+					}
+					&:hover {
+						box-shadow: inset 0px 0px 20px 1px #303030;
+					}
+				}
+			}
+		}
+	}
+}
+.site-header {
+	.hero {
+		background-image: url('../images/header_bg.jpg');
+		background-position: 50% 0;
+		background-size: cover;
+		color: #ffffff;
+		height: 100%;
+		text-align: center;
+		transform-style: preserve-3d;
+
+		.container {
+			position: relative;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+
+			@media (min-width: 768px) {
+				padding-top: 0;
+				padding-bottom: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			.hero-text {
+				border-bottom: 1px solid #ffffff;
+				display: inline-block;
+				font-size: 4vw;
+				font-weight: 900;
+				letter-spacing: .125em;
+				max-width: 615px;
+				padding: 2.5rem 0 1.5rem;
+				text-transform: uppercase;
+
+				@media (min-width: 768px) {
+					font-size: 2.857em;
+					padding: 5rem 0 3rem;
+				}
+			}
+		}
+	}
+	@media (min-width: 768px) {
+		margin-top: -90px;
+		height: 637px;
+	}
+}
+.home-about {
+	margin: 3rem 0;
+
+	.home-about-section-header {
+		color: #286191;
+		border-top-width: 8px;
+		border-top-style: solid;
+		border-top-color: inherit;
+		display: inline-block;
+		font-size: 1.714em;
+		font-weight: 900;
+		letter-spacing: .125em;
+		margin-top: 1rem;
+		padding: 1rem 0;
+		text-transform: uppercase;
+	}
+
+	p {
+		color: #13364f;
+		font-size: 1.571em;
+		font-weight: 300;
+	}
+
+	@media (min-width: 768px) {
+		margin: 8.6rem 0;
+	}
+}
+.home-clients {
+	background-image: url('../images/clients_bg.jpg');
+	background-position: 50% 0;
+	background-size: cover;
+	color: #ffffff;
+	padding: 3rem 0 5rem;
+
+	.home-clients-section-header {
+		border-bottom: 1px solid #ffffff;
+		display: inline-block;
+		font-size: 2.857em;
+		font-weight: 900;
+		letter-spacing: .125em;
+		padding-bottom: 1.5rem;
+		text-transform: uppercase;
+	}
+	
+	.home-clients-row {
+		padding-top: 3rem;
+
+		.client-logo {
+			background-color: #22323d;
+			margin: 1.5rem auto;
+		}
+		@media (min-width: 768px) {
+			padding-top: 8rem;
+		}
+	}
+	@media (min-width: 768px) {
+		padding: 6.5rem 0 10rem;
+	}
+}
+.home-contacts {
+	margin: 3rem 0 4rem;
+
+	.home-contact-section-header {
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: inherit;
+		color: #1e2f3e;
+		display: inline-block;
+		font-size: 2.857em;
+		font-weight: 900;
+		letter-spacing: .125em;
+		line-height: 1.1;
+		margin-bottom: 4rem;
+		padding-bottom: 1.5rem;
+		text-transform: uppercase;
+	}
+	p {
+		color: #13364f;
+		font-size: 1.571em;
+		font-weight: 300;
+	}
+	.home-contacts-items {
+		font-family: 'Open Sans', sans-serif;
+		margin-top: 2rem;
+
+		p {
+			margin: 0 0 2rem;
+			font-size: 1.286em;
+			font-weight: 300;
+
+			span {
+				font-weight: 600;
+			}
+		}
+	}
+	.home-contacts-form {
+		margin-top: 3rem;
+		
+
+		.form-control, .btn {
+			border-radius: 0;
+			font-size: 1.143em;
+			padding: 16px;
+			text-transform: uppercase;
+		}
+		.form-control {
+			background-color: #f3f3f3;
+			border-width: 0 0 4px;
+			border-bottom-color: #c9d7e3;
+			color: #1e2f3e;
+			font-weight: 300;
+			height: auto;
+		}
+		.btn {
+			background-color: #286191;
+			border: none;
+			color: #ffffff;
+			font-weight: 900;
+			width: 100%;
+		}
+		textarea {
+			&.form-control {
+				height: 128px;
+				resize: vertical;
+			}
+			
+		}
+	}
+	@media (min-width: 768px) {
+		margin: 8rem 0 7rem;
+	}
+}
+footer {
+	background-color: #0d171f;
+	color: #ffffff;
+	padding: 3.5rem 0;
+	text-align: center;
+
+	a {
+		color: #ffffff;
+	}
+	@media (min-width: 768px) {
+		.copyright {
+			text-align: left;
+		}
+		.nav-footer {
+			text-align: right;
+		}
+	}
+}
